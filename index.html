@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人简历 · zhang shulin</title>
+<meta name="description" content="感谢您浏览我的个人简历"/>
+<meta name="author" content="zhangshulin" />
+<style type="text/css">
+html,body{margin:0;padding:0}
+*{box-sizing: border-box;}
+
+html
+{
+	font-size:100%;
+}
+
+body
+{
+	-webkit-font-smoothing:antialiased;
+	color:#111;
+	font-family:Lora, serif;
+	font-size:18px;
+	font-weight:400;
+	line-height:1.4;
+	text-rendering:optimizeLegibility;
+}
+
+h1
+{
+	color:rgba(0,0,0,.9);
+}
+a{
+  color: #888;
+}
+.wrapper
+{
+	height:100%;
+}
+
+.left
+{
+	background-color:rgba(0,0,0,.025);
+	border-right:1px solid rgba(0,0,0,.05);
+	float:right;
+	height:100%;
+	margin-left:-1px;
+	min-width:256px;
+	position:fixed;
+	width:30%;
+  
+}
+
+.right
+{
+	float:right;
+	height:100%;
+	position:relative;
+	width:70%;
+}
+
+
+.myname
+{
+	bottom:0;
+	height:390px;
+	left:0;
+	margin:auto;
+	position:absolute;
+	right:0;
+	top:0;
+	width:85%;
+}
+
+.me-img
+{
+	background-size:100%;
+  background-position:0px;
+	border-radius:100%;
+	height:150px;
+	margin:0 auto;
+	position:relative;
+	width:150px;
+  overflow: hidden;
+  border: 5px solid #fafafa;
+  transition: 0.2s ease-in;
+}
+.me-img:hover{
+  border-color: #fff;
+  transform: scale(1.1);
+}
+.me-img img{
+  width: 100%;
+}
+
+.myname h1
+{
+	font-family:Open Sans, sans-serif;
+	font-size:1.6em;
+	text-align:center;
+}
+.myname p
+{
+	color:rgba(0,0,0,.9);
+	font-size:.8em;
+	line-height:1.5;
+	margin:0 8px 0 0;
+	text-align:center;
+}
+.myname p a{color: #555;}
+
+.myname .name-text
+{
+	margin:0 auto;
+	width:85%;
+}
+
+.inner
+{
+	margin:0 auto;
+	max-width:975px;
+	padding:3em;
+}
+
+.inner h1
+{
+	font-size:1.75em;
+}
+
+.inner p
+{
+	color:rgba(0,0,0,.8);
+}
+
+.inner p em
+{
+	color:rgba(0,0,0,1);
+	font-style:normal;
+  font-weight: bold;
+}
+.intro p em{
+  margin-right:0px;
+  display: inline-block;
+  position: relative;
+}
+.intro p em::after{
+  display: block;
+  background-color: #0b6cf6;
+  width: 0;
+  height: 10px;
+  border-radius: 3px;
+  position: absolute;
+  left:-2px;
+  bottom:0;
+  content:'';
+  z-index: -1;
+  opacity: 0;
+  transition: 0.25s ease-in;
+}
+
+.intro p:hover{
+  color:rgba(0,0,0,1);
+}
+.intro p:hover em::after{
+  opacity: 0.9;
+  width: 93%;
+}
+
+.inner section
+{
+	margin:100px auto;
+}
+
+ul
+{
+	list-style-type:none;
+	margin-top:-10px;
+	max-width:570px;
+	padding:0;
+}
+
+.skill-set li
+{
+	background:rgba(0,0,0,.7);
+	border-radius:50px;
+	color:#FFF;
+	display:inline-block;
+	list-style:none;
+	margin:15px 15px 0 0;
+	padding:10px 30px;
+	text-align:justify;
+  transition: 0.2s ease-in;
+}
+.skill-set li:hover
+{
+	background:#0b6cf6;
+  box-shadow:0 8px 15px #bbb;
+  transform: scale(1.05);
+}
+
+.jobs ul{
+  padding-bottom: 10px;
+  transition: 0.3s ease-in;
+}
+.jobs ul:last-child{
+  padding-bottom: 0;
+}
+.jobs li{
+  list-style:  circle inside;
+  line-height:1.5;
+}
+.jobs ul:hover{
+  margin-left: 10px;
+}
+.jobs ul:hover li{
+  list-style:  disc inside;
+}
+
+.works ul{
+  display: flex;
+}
+.edu p span{
+  margin: 0 6px;
+  color: #111;
+}
+.works li{
+  margin-right: 15px;
+}
+.works li img{
+  width: 100px;
+  border-radius: 15px;
+  transition: 0.2s ease-in;
+}
+.works li img:hover{
+  transform: scale(1.1);
+}
+
+.pdf{
+  padding-top: 15px;
+}
+.pdf a{
+  text-decoration: none;
+  font-size: 0.9em;
+}
+.pdf a svg{
+  vertical-align: middle;
+  position: relative;
+  bottom: 2px;
+}
+.pdf a:hover svg{
+  fill: #0b6cf6;
+}
+
+.hide{
+  display: none;
+}
+
+@media screen and (max-width: 48em) {
+	.right,.left
+	{
+		float:none;
+    position:relative !important;
+		width:100%;
+    min-height:400px;
+	}
+.inner{
+  padding: 0 3em 3em;
+}
+@media screen and (max-width: 75em) {
+    body
+{ font-size:16px;}
+}
+
+@media screen and (max-width: 60em) {
+    body
+{ font-size:14.5px;}
+}
+}
+.clearfix:after {
+   content: " "; 
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="wrapper clearfix">
+    <div class="left">
+  
+      <div class="myname">
+  
+        <div class="me-img"><img src="http://sh6b7depi.hb-bkt.clouddn.com/meava.jpg" alt=""></div>
+  
+        <div class="name-text">
+  
+          <h1>张树林</h1>
+          <p><a href="tel:+18610751011">18610751011</a></p>
+          <p><a href="mailto:shulin@pku.edu.cn">shulin@pku.edu.cn</a></p>
+          <p class="pdf"><a href="http://sh6b7depi.hb-bkt.clouddn.com/zhangshulin.pdf" target=“_blank”>
+            <svg class="icon" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M911.99 217.146q16.017 16.017 27.426 43.443t11.41 50.32v658.238q0 22.819-16.017 38.836T895.973 1024H128.027q-22.819 0-38.836-16.017t-16.017-38.836V54.927q0-22.82 16.017-38.837T128.027.073h511.964q22.819 0 50.319 11.41t43.443 27.426zM658.275 77.672v214.805H873.08q-5.704-16.602-12.58-23.404L681.68 90.252q-6.876-6.875-23.405-12.58zM877.688 950.79v-585.1H639.991q-22.82 0-38.836-16.018t-16.017-38.836V73.138H146.312v877.651h731.376zm-293.72-338.846q18.869 14.847 47.978 32.034 33.716-4.023 66.848-4.023 83.962 0 101.149 28.012 9.142 12.58 1.17 29.694 0 .585-.585 1.17l-1.17 1.17v.585q-3.438 21.722-40.592 21.722-27.426 0-65.677-11.41T618.78 680.62q-126.309 13.677-224.02 47.393-87.4 149.713-138.304 149.713-8.557 0-16.017-4.023l-13.677-6.875q-.585-.585-3.437-2.852-5.705-5.705-3.438-20.552 5.12-22.819 32.035-52.293t75.404-55.146q7.972-5.12 13.165 3.437 1.17 1.17 1.17 2.268 29.694-48.564 61.144-112.56 38.836-77.671 59.46-149.712-13.676-46.881-17.406-91.13t3.73-72.844q6.29-22.82 23.989-22.82h12.58q13.164 0 19.966 8.558 10.312 11.994 5.12 38.836-1.17 3.437-2.268 4.534.586 1.683.586 4.535V366.2q-1.17 70.285-7.972 109.707 31.449 93.689 83.45 135.962zm-329.12 234.845q29.694-13.677 78.257-90.252-29.108 22.819-50.026 47.978t-28.304 42.274zm227.458-525.64q-8.557 23.988-1.17 75.404.585-4.022 4.022-25.16 0-1.681 4.023-24.573.585-2.268 2.267-4.535-.585-.585-.585-1.17t-.292-.878-.293-.877q-.585-12.58-7.46-20.552 0 .585-.585 1.17v1.17zm-70.87 377.682q77.16-30.864 162.292-46.296-1.17-.585-7.46-5.412t-9.142-7.68q-43.444-38.25-72.553-100.564-15.432 49.149-47.393 112.559-17.114 32.034-25.744 47.393zm369.125-9.142q-13.676-13.677-80.012-13.677 43.444 16.017 70.87 16.017 7.972 0 10.313-.585 0-.585-1.17-1.682z" fill="#aaa"/></svg> 下载PDF版</a></p>
+
+        </div>
+  
+      </div>
+  
+
+    </div>
+
+    <div class="right">
+  
+      <div class="inner">
+        <section class="intro">
+          <h1>个人评价</h1>
+          <p>
+            <em>资深的前端开发经验：</em>自毕业后第一份工作开始，一直从事于互联网产品的设计及前端开发工作，随着PC端到移动端产品的发展，经历了前端开发的不同时期，熟悉从table布局、css、JavaScript到现在的SVG和微信小程序等多种前端开发技术。
+          </p>
+          <p>
+            <em>设计转化的思路丰富：</em>在新浪的工作经历中，我不仅参与了每年车展活动和新车发布的宣传页面的前端开发，还负责了后来小程序里实现的交互方案。过往的工作中，我不仅实现前端开发，并且从提升用户浏览体验的角度提供建设性建议。
+          </p>
+          <p>
+            <em>热爱生活与持续学习：</em>我有着多年的运动习惯，是马拉松和铁三的爱好者。运动不仅塑造了我积极健康的生活方式，也影响着我不断学习和探索的热情。我深信，持续学习和自我突破是个人生活意义的关键。
+          </p>
+          
+        </section>
+
+
+        <section>
+          <h1>前端技能</h1>
+          <ul class="skill-set">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SVG</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Photoshop</li>
+            <li>sketch</li>
+            <li>小程序前端</li>
+          </ul>
+        </section>
+
+
+        <section class="jobs">
+          <h1>工作履历</h1>
+          <p>
+            <em>2019 - 至今   小巢科技   产品开发及运营</em></p>
+            <ul>
+              <li>网站、App、微信小程序项目前端开发
+                </li>
+              <li>基于社交媒体的运营的产品开发</li>
+            </ul>
+          
+          
+          <p>
+            <em>2012 - 2017   和你在一起网络社区   项目开发及运营</em></p>
+            <ul>
+              <li>设计并开发整个web社区
+                </li>
+              <li>负责移动端的项目设计及开发</li>
+            </ul>
+          
+
+          <p>
+            <em>2008 - 2012   新浪网   产品部开发主管（前端）</em></p>
+            <ul>
+              <li>新浪网汽车频道的线上产品的前端设计开发
+                </li>
+              <li>参与频道整体升级改版、每年车站、新车发布活动等前端的开发；</li>
+            </ul>
+         
+
+          <p>
+            <em>2005 - 2008   智购网   产品开发</em></p>
+            <ul>
+              <li>负责网站产品的界面设计及前端开发
+                </li>
+              <li>重构界面及交互设计，提升产品视觉体验和用户的易用性</li>
+            </ul>
+          
+        </section>
+
+
+          <section class="edu">
+            <h1>教育背景</h1>
+            <p>2001 - 2005 <span>本科</span><span>沈阳航空航天大学</span><span>计算机科学与技术专业</span></p>
+            <p>2017 - 2019 <span>硕士</span><span>北京大学</span><span>光华管理学院</span><span>工商管理硕士</span></p>
+            <p>2018 <span>访学</span><span>美国德州大学 奥斯汀分校</span><span>Emerging & Disruptive Technologies for Business</span>导师 Dr. Prabhudev Konana</p>
+            
+          </section>
+
+
+
+          <section class="works hide">
+            <h1>部分作品</h1>
+            <ul>
+              <li><img src="http://sh6b7depi.hb-bkt.clouddn.com/fqlx.png" alt="手机扫码观看 "></li>
+              <li><img src="http://sh6b7depi.hb-bkt.clouddn.com/tomatoedu-com.png" alt="手机扫码观看 "></li>
+              <li><img src="http://sh6b7depi.hb-bkt.clouddn.com/funliving-com.png" alt="手机扫码观看 "></li>
+              <li>下载案例源文件 <br> <a href="http://sh6b7depi.hb-bkt.clouddn.com/2014y-dell-case.zip">Case1</a></li>
+            </ul>
+            下载案例源文件
+            <ul>
+            
+          </ul>
+          </section>
+
+        
+      </div>
+  
+    </div>
+  
+  </div>
+
+
+</body>
+</html>
